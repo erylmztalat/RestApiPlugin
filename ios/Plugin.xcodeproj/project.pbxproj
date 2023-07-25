@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		03FC29A292ACC40490383A1F /* Pods_Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A61DA5A1F2DD4F959604D /* Pods_Plugin.framework */; };
+		06137B6A2A701357001D4CC7 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06137B692A701357001D4CC7 /* NetworkServiceTests.swift */; };
 		06504E3B2A6EFE6B0061197E /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 06504E3A2A6EFE6B0061197E /* NetworkService */; };
+		066DF0782A6FF0E50025DBCA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066DF0772A6FF0E50025DBCA /* NetworkService.swift */; };
+		067A09872A6F3A17006533C3 /* CoverRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A097F2A6F3A17006533C3 /* CoverRequest.swift */; };
+		067A09882A6F3A17006533C3 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A09802A6F3A17006533C3 /* Endpoint.swift */; };
+		067A09892A6F3A17006533C3 /* AudioResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A09822A6F3A17006533C3 /* AudioResponse.swift */; };
+		067A098A2A6F3A17006533C3 /* CoverFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A09842A6F3A17006533C3 /* CoverFetcherService.swift */; };
+		067A098B2A6F3A17006533C3 /* AudioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067A09862A6F3A17006533C3 /* AudioItem.swift */; };
 		20C0B05DCFC8E3958A738AF2 /* Pods_PluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6753A823D3815DB436415E3 /* Pods_PluginTests.framework */; };
 		2F98D68224C9AAE500613A4C /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F98D68124C9AAE400613A4C /* RestAPI.swift */; };
 		50ADFF92201F53D600D50D53 /* Plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFF88201F53D600D50D53 /* Plugin.framework */; };
@@ -30,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06137B692A701357001D4CC7 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		066DF0772A6FF0E50025DBCA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		067A097F2A6F3A17006533C3 /* CoverRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverRequest.swift; sourceTree = "<group>"; };
+		067A09802A6F3A17006533C3 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		067A09822A6F3A17006533C3 /* AudioResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioResponse.swift; sourceTree = "<group>"; };
+		067A09842A6F3A17006533C3 /* CoverFetcherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverFetcherService.swift; sourceTree = "<group>"; };
+		067A09862A6F3A17006533C3 /* AudioItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioItem.swift; sourceTree = "<group>"; };
 		2F98D68124C9AAE400613A4C /* RestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		3B2A61DA5A1F2DD4F959604D /* Pods_Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ADFF88201F53D600D50D53 /* Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +85,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066DF0762A6FF0D20025DBCA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				066DF0772A6FF0E50025DBCA /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		067A097E2A6F3A17006533C3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				067A097F2A6F3A17006533C3 /* CoverRequest.swift */,
+				067A09802A6F3A17006533C3 /* Endpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		067A09812A6F3A17006533C3 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				067A09822A6F3A17006533C3 /* AudioResponse.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		067A09832A6F3A17006533C3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				067A09842A6F3A17006533C3 /* CoverFetcherService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		067A09852A6F3A17006533C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				067A09862A6F3A17006533C3 /* AudioItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		067A098C2A6F3AD7006533C3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				50E1A94720377CB70090CE1A /* RestAPIPlugin.swift */,
+				2F98D68124C9AAE400613A4C /* RestAPI.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		50ADFF7E201F53D600D50D53 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +158,12 @@
 		50ADFF8A201F53D600D50D53 /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				50E1A94720377CB70090CE1A /* RestAPIPlugin.swift */,
-				2F98D68124C9AAE400613A4C /* RestAPI.swift */,
+				066DF0762A6FF0D20025DBCA /* Network */,
+				067A098C2A6F3AD7006533C3 /* Main */,
+				067A097E2A6F3A17006533C3 /* API */,
+				067A09852A6F3A17006533C3 /* Model */,
+				067A09812A6F3A17006533C3 /* ResponseModel */,
+				067A09832A6F3A17006533C3 /* Service */,
 				50ADFF8B201F53D600D50D53 /* RestAPIPlugin.h */,
 				50ADFFA72020EE4F00D50D53 /* RestAPIPlugin.m */,
 				50ADFF8C201F53D600D50D53 /* Info.plist */,
@@ -107,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				50ADFF96201F53D600D50D53 /* RestAPITests.swift */,
+				06137B692A701357001D4CC7 /* NetworkServiceTests.swift */,
 				50ADFF98201F53D600D50D53 /* Info.plist */,
 			);
 			path = PluginTests;
@@ -315,8 +384,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50E1A94820377CB70090CE1A /* RestAPIPlugin.swift in Sources */,
+				067A098A2A6F3A17006533C3 /* CoverFetcherService.swift in Sources */,
+				067A09892A6F3A17006533C3 /* AudioResponse.swift in Sources */,
+				067A098B2A6F3A17006533C3 /* AudioItem.swift in Sources */,
+				066DF0782A6FF0E50025DBCA /* NetworkService.swift in Sources */,
+				067A09872A6F3A17006533C3 /* CoverRequest.swift in Sources */,
 				2F98D68224C9AAE500613A4C /* RestAPI.swift in Sources */,
 				50ADFFA82020EE4F00D50D53 /* RestAPIPlugin.m in Sources */,
+				067A09882A6F3A17006533C3 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06137B6A2A701357001D4CC7 /* NetworkServiceTests.swift in Sources */,
 				50ADFF97201F53D600D50D53 /* RestAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,10 @@ struct CoverRequest: NetworkRequest {
     
     let endpoint: URL?
     var method: RequestMethod { return .get }
-    var headers: [String : String]? { return nil }
+    var headers: [String : String]? {
+        return ["Content-Type": "application/json"]
+    }
+    
     var parameters: [String: Any]? { return nil }
 
     init(endpoint: Endpoint) {
